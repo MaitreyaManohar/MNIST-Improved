@@ -1,7 +1,7 @@
 
 
 # MNIST Improved
- An improved version of MNIST with an aim to achieve 99.4% accuarcy on the validation dataset
+ An improved version of MNIST with an aim to achieve 99.4% accuracy on the validation dataset.
 
 ## How to run
 
@@ -46,3 +46,34 @@ Just create a python environment with the libraries and packages in the starting
 | Forward/backward pass size (MB) | 2.54 |
 | Params size (MB) | 0.07 |
 | Estimated Total Size (MB) | 2.62 |
+
+
+
+# Part 1
+
+![image info](./Part-1/Screenshot.png)
+
+## Steps of Backpropagation
+
+ - **Forward Pass** - Input data is passed through the layers and the output is calculated by multiplying by their respective weights.
+
+ - Then the total error is found using a defined criterion. For example, we used mean square error criterion to find the loss. 
+ 
+ - Then we find the derivative of the error with respect to the weights closest to the output layer because it is easier to find
+
+ - Then we move backwards and find the derivative of the error with respect to the weights in the previous layer using the prev calculations
+
+ - These are the main steps in generating the excel file in the Part 1 folder
+
+## Effects of changing the learning rate
+
+As we increase the learning rate the loss drops with lesser epochs and it becomes more steeper. However, if the learning rate is too high it overshoots beyond the local minimum and may lead to increase in loss. This happens when the learning rate is more than 80 thats when the loss increases and then decreases.
+
+### Learning Rate = 2
+![image info](./Part-1/Screenshot-2.png)
+
+### Learning Rate = 20
+![image info](./Part-1/Screenshot-3.png)
+
+### Learning Rate = 80
+![image info](./Part-1/Screenshot-4.png)
