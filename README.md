@@ -5,7 +5,7 @@
 
 ## How to run
 
-Just create a python environment with the libraries and packages in the starting import. Then run the ipynb, alternatively you could upload this notebook on colab and run it. Reached 99.4 accuracy
+Just create a python environment with the libraries and packages in the starting import. Then run the ipynb, alternatively you could upload this notebook on colab and run it. Reached 99.4 accuracy in the 17th or 18th epoch successfully :)
 
 ## Model Parameters
 
